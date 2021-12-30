@@ -22,3 +22,7 @@ simply use a cli-args parsing package in `main.ts` and build out the commands.
 ## Adjustments after using the Template 
 
 1. Update the `APP_NAME` variable in `.env` file. It is used as name for bundled js files or compiled executables.
+
+## TODOs for this Template 
+
+- Add automation with Github Actions: https://stefanbuck.com/blog/repository-templates-meets-github-actions
