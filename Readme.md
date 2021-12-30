@@ -18,3 +18,7 @@ simply use a cli-args parsing package in `main.ts` and build out the commands.
 - `bonnie.toml` = A file defining the workspace scripts, like `bonnie start` & `bonnie build`
 - `main.ts` = the entrypoint for this deno script
 - `Readme.md` = A normal Readme file
+
+## Adjustments after using the Template 
+
+1. Update the `APP_NAME` variable in `.env` file. It is used as name for bundled js files or compiled executables.
