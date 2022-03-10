@@ -9,4 +9,4 @@ const scripts = {
 
 }
 
-export default scripts;
+export default {scripts};
