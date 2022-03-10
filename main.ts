@@ -1,4 +1,8 @@
+import { log } from "./src/dependencies.ts";
 import { startKia } from "./src/utils/start-kia.ts";
+
+const CWD = Deno.env.get("CWD") ?? Deno.cwd();
+log.debug(`Using CWD (from ENV or real cwd): `, CWD);
 
 /**
  * VERSION: 1.0.0
