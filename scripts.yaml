@@ -6,9 +6,12 @@
 envFile:
  - .env
 
+allow:
+  - net
+
 scripts:
   # short form command for `deno run file.ts` 
-  start: main.ts
+  start: deno run --unstable main.ts
 
   format:
     cmd: deno fmt
