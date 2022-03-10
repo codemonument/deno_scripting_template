@@ -1,0 +1,18 @@
+
+# Config Getting Started Guide: https://velociraptor.run/docs/configuration/
+# Complete Config Docs: https://doc.deno.land/https://deno.land/x/velociraptor@1.5.0/src/scripts_config.ts
+# IMPORTANT: Run some vr command at least once, to install the git hooks! (a simple `vr` is enough)
+ 
+envFile:
+ - .env
+
+scripts:
+  # short form command for `deno run file.ts` 
+  start: main.ts
+
+  format:
+    cmd: deno fmt
+    gitHook: pre-commit
+    
+    
+
