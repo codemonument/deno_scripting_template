@@ -10,7 +10,7 @@ import { resolve as resolveToAbsolutePath } from "https://deno.land/std@0.129.0/
  * in where the deno executable was called
  * seems not possible in velociraptor (script runner) right now.
  *
- * @returns
+ * @returns string the current working directory which should be used in the app
  */
 export function resolveCwd() {
   let CWD = Deno.env.get("CWD");
