@@ -1,0 +1,7 @@
+// Deno config file as JSON with comments, 
+// can be expanded as needed to configure integrated tsc, linter and formatter
+{
+    "compilerOptions": {
+        "strict": true
+    }
+}
