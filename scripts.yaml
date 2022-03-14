@@ -8,6 +8,7 @@ envFile:
 
 allow:
   - net
+  - read
 
 scripts:
   # short form command for `deno run file.ts` 
