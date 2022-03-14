@@ -1,5 +1,5 @@
 import { log, resolveToAbsolutePath } from "./src/dependencies.ts";
-import { startKia } from "./src/utils/start-kia.ts";
+import { startKia } from "./src/utils/startKia.ts";
 
 let CWD = Deno.env.get("CWD");
 if (CWD) {

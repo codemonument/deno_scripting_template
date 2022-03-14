@@ -7,8 +7,10 @@ import Kia from "https://deno.land/x/kia@0.4.1/mod.ts";
  * @param text
  * @returns
  */
-export async function startKia(text: string): Promise<Kia> {
+async function startKia(text: string): Promise<Kia> {
   const kia = new Kia(text);
   await kia.start();
   return kia;
 }
+
+export { Kia, startKia };
