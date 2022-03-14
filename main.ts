@@ -1,8 +1,14 @@
-import { log } from "./src/dependencies.ts";
+import { log, resolveToAbsolutePath } from "./src/dependencies.ts";
 import { startKia } from "./src/utils/start-kia.ts";
 
-const CWD = Deno.env.get("CWD") ?? Deno.cwd();
-log.debug(`Using CWD (from ENV or real cwd): `, CWD);
+let CWD = Deno.env.get("CWD");
+if (CWD) {
+  CWD = resolveToAbsolutePath(CWD);
+  log.info(`Using current working directory from CWD Env var: ${CWD}`);
+} else {
+  CWD = Deno.cwd();
+  log.info(`Using current working directory from Deno.cwd(): ${CWD}`);
+}
 
 /**
  * VERSION: 1.0.0
