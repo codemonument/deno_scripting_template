@@ -8,21 +8,22 @@ cli-args parsing package in `main.ts` and build out the commands.
 
 ## Folder Structure
 
-- `.vscode` = A folder, containing a `settings.json` which activates the deno
-  language server for this workspace
+- `.vscode` = A folder, 
+  - containing a `settings.json` which activates the deno language server for this workspace
+  - containing a `extensions.json` with recommended vscode extensions for this workspace
 - `dist` = A folder containing the output artefacts, like a bundled js file or
-  even an executable for windows or mac
+  even executables for windows or mac
 - `playground` = a location used as cwd for running main.ts (this allows a clean
   testing space and avoids problems with the source-code files, like accidental
   deletion)
 - `src` = A folder containing more source files which are used by `main.ts`
-- `.env` = A file with environment variables being used with the `bonnie` script
-  running tool
+- `.env` = A file with environment variables being used with the `velociraptor` script runner
 - `.gitignore` = A normal gitingore file
-- `bonnie.toml` = A file defining the workspace scripts, like `bonnie start` &
-  `bonnie build`
-- `main.ts` = the entrypoint for this deno script
+- `deno.jsonc` - A JSON config file with comments to customize tsc, linting and formatting inside deno executable
+- `main.ts` = the entrypoint for this deno script / app
 - `Readme.md` = A normal Readme file
+- `scripts.yaml` = A file defining the workspace scripts, like `vr start` & `vr build`. 
+   Needs the `velociraptor` cli to be installed globally. (see install instructions below)
 
 ## Adjustments after using the Template
 
