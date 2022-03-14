@@ -22,6 +22,12 @@ scripts:
 
   format:
     cmd: deno fmt
+
+  build: 
+    cmd: vr bundle 
+
+  bundle: 
+    cmd: deno bundle --unstable main.ts dist/${APP_NAME}.js
     
     
 
