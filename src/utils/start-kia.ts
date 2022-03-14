@@ -1,4 +1,4 @@
-import { Kia } from "https://deno.land/x/kia@0.4.1/mod.ts";
+import Kia from "https://deno.land/x/kia@0.4.1/mod.ts";
 
 /**
  * Starts an entry on cli with a spinner
