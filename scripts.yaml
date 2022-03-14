@@ -28,6 +28,10 @@ scripts:
 
   bundle: 
     cmd: deno bundle --unstable main.ts dist/${APP_NAME}.js
+
+  # If needed, adjust and activate
+  # compile: "deno compile --unstable --target x86_64-pc-windows-msvc --allow-read --allow-write --allow-net --allow-run -o dist/${APP_NAME} main.ts "
+
     
     
 
