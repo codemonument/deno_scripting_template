@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "umbo.vscode-velociraptor"
+    "umbo.vscode-velociraptor",
+    "denoland.vscode-deno"
   ]
 }
