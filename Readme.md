@@ -36,10 +36,9 @@ cli-args parsing package in `main.ts` and build out the commands.
    1. Get the newest install command from here:
       https://velociraptor.run/docs/installation/
    2. Run the install command from the website, for example:
-      `deno install -qAn vr https://deno.land/x/velociraptor@1.4.0/cli.ts`
-   3. If you used this command from 2., run `vr upgrade` afterwards to update
-      velociraptor
-2.
+      `deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts`
+   3. If you used this exact command from Step 2 from this readme, 
+      run `vr upgrade` afterwards to update velociraptor
 
 ## TODOs for this Template
 
