@@ -1,7 +1,7 @@
 import { startKia } from "./src/utils/startKia.ts";
 
 /**
- * VERSION: 1.0.0
+ * VERSION: 0.0.1
  */
 try {
   const demoKia = await startKia(
