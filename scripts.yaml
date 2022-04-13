@@ -14,11 +14,6 @@ scripts:
   # short form command for `deno run file.ts` 
   start: 
     cmd: deno run --unstable main.ts
-    allow: 
-      env: CWD
-    env: 
-      CWD: ./playground
-
 
   format:
     cmd: deno fmt
