@@ -1,7 +1,4 @@
 import { startKia } from "./src/utils/startKia.ts";
-import { resolveCwd } from "./src/utils/resolveCwd.ts";
-
-const CWD = resolveCwd();
 
 /**
  * VERSION: 1.0.0
@@ -11,7 +8,9 @@ try {
     `Base Deno Repo, Sleep for 3 sek`,
   );
   setTimeout(async () => {
-    await demoKia.succeed(`Finished Base Deno Repo sucessfully, CDW: ${CWD}`);
+    await demoKia.succeed(
+      `Finished Base Deno Repo sucessfully, CDW: ${Deno.cwd()}`,
+    );
   }, 3000);
 } catch (error) {
   console.error(error);
