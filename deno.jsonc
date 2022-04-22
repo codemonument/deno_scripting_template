@@ -1,5 +1,8 @@
-// Deno config file as JSON with comments, 
-// can be expanded as needed to configure integrated tsc, linter and formatter
+/**
+ * Deno Config File
+ * - jsonc = JSON with comments
+ * - can be expanded as needed to configure integrated tsc, linter and formatter
+ */
 {
     /**
      * Typescript Compiler Options
