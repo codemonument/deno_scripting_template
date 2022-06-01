@@ -12,17 +12,19 @@ allow:
   env: true
 
 scripts:
-  start: deno run --unstable main.ts
-  
+  start: deno run main.ts
+
+  test: deno test 
+
   format: deno fmt
 
   build: vr bundle 
 
-  bundle: deno bundle --unstable main.ts dist/${CLI_NAME}.js
+  bundle: deno bundle main.ts dist/${CLI_NAME}.js
 
   # If needed, adjust
   compile: 
-    cmd: "deno compile --unstable --target x86_64-pc-windows-msvc -A -o dist/${CLI_NAME} main.ts "
+    cmd: "deno compile --target x86_64-pc-windows-msvc -A -o dist/${CLI_NAME} main.ts "
 
     
     
