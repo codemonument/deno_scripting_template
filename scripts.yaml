@@ -7,25 +7,22 @@ envFile:
  - .env
 
 allow:
-  - net
-  - read
+  net: true
+  read: true
+  env: true
 
 scripts:
-  # short form command for `deno run file.ts` 
-  start: 
-    cmd: deno run --unstable main.ts
+  start: deno run --unstable main.ts
+  
+  format: deno fmt
 
-  format:
-    cmd: deno fmt
+  build: vr bundle 
 
-  build: 
-    cmd: vr bundle 
+  bundle: deno bundle --unstable main.ts dist/${CLI_NAME}.js
 
-  bundle: 
-    cmd: deno bundle --unstable main.ts dist/${APP_NAME}.js
-
-  # If needed, adjust and activate
-  # compile: "deno compile --unstable --target x86_64-pc-windows-msvc --allow-read --allow-write --allow-net --allow-run -o dist/${APP_NAME} main.ts "
+  # If needed, adjust
+  compile: 
+    cmd: "deno compile --unstable --target x86_64-pc-windows-msvc -A -o dist/${CLI_NAME} main.ts "
 
     
     
