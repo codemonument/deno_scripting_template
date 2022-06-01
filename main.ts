@@ -1,21 +1,14 @@
-import { startKia } from "./src/utils/startKia.ts";
-
-/**
- * VERSION: 0.0.1
- */
-async function main() {
-  const demoKia = await startKia(
-    `Base Deno Repo, Sleep for 3 sek`,
-  );
-  setTimeout(async () => {
-    await demoKia.succeed(
-      `Finished Base Deno Repo sucessfully, CDW: ${Deno.cwd()}`,
-    );
-  }, 3000);
-}
+import { log } from "./src/deps/log.std.ts";
+import { runCli } from "./src/runCli.ts";
+import { VERSION } from "./VERSION.ts";
 
 try {
-  await main();
+  log.info(
+    `Running ${Deno.env.get("CLI_NAME")}
+     Version: ${VERSION} \n`,
+  );
+  // Main Command
+  await runCli(Deno.args);
 } catch (error) {
   console.error(error);
   Deno.exit();
