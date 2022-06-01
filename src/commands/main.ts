@@ -1,21 +1,11 @@
 import { YargsInstance } from "../deps/yargs.ts";
-import { startKia } from "../utils/startKia.ts";
 import { MainArgs } from "./mainArgs.type.ts";
 
 /**
  * @param args
  */
-async function commandHandler(args: MainArgs) {
+function commandHandler(args: MainArgs) {
   console.info("Default command called with args:", args);
-
-  const demoKia = await startKia(
-    `Base Deno Repo, Sleep for 3 sek`,
-  );
-  setTimeout(async () => {
-    await demoKia.succeed(
-      `Finished Base Deno Repo sucessfully`,
-    );
-  }, 3000);
 }
 
 function argsBuilder(yargs: YargsInstance) {
