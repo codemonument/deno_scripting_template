@@ -40,6 +40,16 @@ cli-args parsing package in `main.ts` and build out the commands.
    3. If you used this exact command from Step 2 from this readme, 
       run `vr upgrade` afterwards to update velociraptor
 
+## Install new Dependencies 
+
+Two Options: 
+- use esm.sh, via the helper tasks: `deno task esm:add <:package>`
+- add bare specifiers to import map via `npm:package-name`
+
+CAUTION: If you want to deploy your script / cli to deno.land/x, you must not use import_map! 
+Bc. installing this script via deno.land/x can't access the import map!
+See: https://deno.land/manual@v1.31.3/basics/import_maps#import-maps-are-for-applications
+
 ## TODOs for this Template
 
 - Add automation with Github Actions:
