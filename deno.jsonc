@@ -4,17 +4,14 @@
  * - can be expanded as needed to configure integrated tsc, linter and formatter
  */
 {
-  /**
-     * Typescript Compiler Options
-     */
   "compilerOptions": {
     "strict": true
   },
   "importMap": "import_map.json",
   "tasks": {
     "start": "deno run -A --unstable main.ts",
-    "esm:add": "deno run -A https://esm.sh/v113 add",
-    "esm:update": "deno run -A https://esm.sh/v113 update",
-    "esm:remove": "deno run -A https://esm.sh/v113 remove"
+    "esm:add": "deno run -A https://esm.sh/v129 add",
+    "esm:update": "deno run -A https://esm.sh/v129 update",
+    "esm:remove": "deno run -A https://esm.sh/v129 remove"
   }
 }
