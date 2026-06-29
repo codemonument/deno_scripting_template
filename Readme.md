@@ -32,6 +32,8 @@ cli-args parsing package in `main.ts` and build out the commands.
 
 ## Setup after Cloning
 
+This repo intentionally does not need Varlock or `jb-dev-env` treatment; the existing lightweight `.env` + Deno setup is enough for this template.
+
 1. Install Velociraptor (Script Runner)
    1. Get the newest install command from here:
       https://velociraptor.run/docs/installation/
